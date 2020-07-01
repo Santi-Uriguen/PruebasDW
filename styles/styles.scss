@@ -1,0 +1,27 @@
+.boxContainer {
+    display:flex;
+    flex-direction:row;
+    width: 100%;
+    position: relative;
+    .boxOne {
+        width: 400px;
+        height: 400px;
+        border: 1px solid rgba(150, 34, 123, 1);
+        background-image: linear-gradient(45deg, red 0%, yellow 50%);
+    }
+    .boxTwo {
+        @extend .boxOne;
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 800px) {
+    .boxContainer {
+        display: flex;
+        flex-direction:column;
+        .boxOne {
+            margin-bottom: 10px;
+            margin-left: 10px;
+        }
+    }
+}
