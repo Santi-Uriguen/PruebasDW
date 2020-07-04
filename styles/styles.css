@@ -12,8 +12,7 @@ header .hamb {
   display: none;
 }
 header .menu {
-  display: flex;
-  justify-content: right;
+  float:right;
   margin-top: -10px;
 }
 header .menu nav ul {
