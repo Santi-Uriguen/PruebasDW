@@ -1,0 +1,76 @@
+* {
+  box-sizing: content-box;
+}
+
+header {
+  width: 100%;
+  height: 5%;
+  position: absolute;
+}
+header #hamb,
+header .hamb {
+  display: none;
+}
+header .menu {
+  display: flex;
+  justify-content: right;
+  margin-top: -10px;
+}
+header .menu nav ul {
+  display: flex;
+  margin-right: 8px;
+  font-size: 15px;
+  font-family: fantasy;
+  list-style: none;
+}
+header .menu nav ul li {
+  margin-right: 15px;
+}
+
+@media (max-width: 500px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  header #hamb {
+    display: none;
+  }
+  header .hamb {
+    display: flex;
+    justify-content: right;
+    margin-right: 5px;
+  }
+  header .hamb .bars {
+    width: 30px;
+    height: 24px;
+  }
+  header .menu {
+    visibility: collapse;
+    margin-right: 33px;
+  }
+  header .menu nav {
+    background-color: gray;
+    border-radius: 5%;
+  }
+  header .menu nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    padding-left: 20px;
+    margin-right: 0px;
+    padding-right: 20px;
+  }
+  header .menu nav ul li {
+    margin-top: 3px;
+    margin-right: 0px;
+  }
+}
+#hamb:checked,
+#hamb:checked + *,
+#hamb:checked + * + * {
+  visibility: visible;
+}
+
+/*# sourceMappingURL=styles.css.map */
