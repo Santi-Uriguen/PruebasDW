@@ -41,9 +41,7 @@ header .menu nav ul li {
     justify-content: right;
     margin-right: 5px;
   }
-  header .hamb .bars {
-    width: 30px;
-    height: 24px;
+  
   }
   header .menu {
     visibility: collapse;
