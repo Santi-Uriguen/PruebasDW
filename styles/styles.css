@@ -1,75 +1,133 @@
-* {
-  box-sizing: content-box;
-}
-
 header {
   width: 100%;
-  height: 5%;
-  position: absolute;
-}
-header #hamb,
-header .hamb {
-  display: none;
-}
-header .menu {
-  float:right;
-  margin-top: -10px;
-}
-header .menu nav ul {
+  position: fixed;
+  z-index: 1;
+  background-color: gray;
+  color: #f7ef64;
+  top: 0;
+  left: 0;
+  height: 6%;
+  overflow-x: hidden;
+  overflow: -moz-hidden-unscrollable;
   display: flex;
-  margin-right: 8px;
-  font-size: 15px;
-  font-family: fantasy;
-  list-style: none;
-}
-header .menu nav ul li {
-  margin-right: 15px;
-}
-
-@media (max-width: 500px) {
-  header {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
-  header #hamb {
-    display: none;
-  }
-  header .hamb {
-    display: flex;
-    justify-content: right;
-    margin-right: 5px;
-  }
-  header .hamb .bars {
-    width: 30px;
-    height: 24px;
-  }
-  header .menu {
-    visibility: collapse;
-    margin-right: 33px;
-  }
-  header .menu nav {
-    background-color: gray;
-    border-radius: 5%;
-  }
-  header .menu nav ul {
-    list-style: none;
+  justify-content: space-between; }
+  header:hover {
+    height: 5vw; }
+  header .head {
     display: flex;
     flex-direction: column;
     justify-content: left;
-    padding-left: 20px;
-    margin-right: 0px;
-    padding-right: 20px;
-  }
-  header .menu nav ul li {
-    margin-top: 3px;
-    margin-right: 0px;
-  }
-}
-#hamb:checked,
-#hamb:checked + *,
-#hamb:checked + * + * {
-  visibility: visible;
-}
+    font-family: "Share Tech", sans-serif; }
+    header .head h1 {
+      margin: 0;
+      font-weight: bolder;
+      font-size: 3vw; }
+    header .head p {
+      margin: 0;
+      font-style: italic;
+      padding-left: 10%;
+      font-size: 1vw; }
+  header nav ul {
+    list-style: none;
+    font-family: "Share Tech", sans-serif;
+    font-size: 1.5vw;
+    display: flex;
+    justify-content: right;
+    margin-right: 5%;
+    margin-top: 5%; }
+    header nav ul li {
+      margin-right: 5%; }
+
+main {
+  display: flex;
+  flex-direction: row;
+  width: 98%; }
+  main nav {
+    position: fixed;
+    left: 0;
+    top: 5%;
+    height: 100%;
+    width: 8%;
+    color: #001a1a;
+    margin-top: 2%;
+    font-size: 1vw; }
+    main nav:hover {
+      width: 12%;
+      font-size: 1.5vw; }
+    main nav ul {
+      list-style: none;
+      font-family: "Share Tech", sans-serif;
+      font-weight: bold;
+      padding-left: 6%;
+      padding-top: 10%; }
+      main nav ul li {
+        margin-bottom: 6%; }
+  main .articles {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    margin-left: 10%; }
+    main .articles article {
+      margin-top: 5%;
+      padding-right: 5%;
+      background-color: #f7ef64;
+      color: gray;
+      padding-left: 4%; }
+      main .articles article h1 {
+        font-family: "Share Tech", sans-serif;
+        font-weight: bold;
+        font-size: 2.5vw; }
+      main .articles article h4 {
+        font-family: "Share Tech", sans-serif;
+        font-style: italic;
+        font-size: 1.8vw; }
+      main .articles article p {
+        font-family: "Share Tech", sans-serif;
+        text-align: justify;
+        font-size: 1.2vw; }
+      main .articles article img {
+        width: 100%;
+        display: flex;
+        justify-content: center; }
+      main .articles article ul {
+        list-style: decimal;
+        font-family: "Share Tech", sans-serif;
+        text-align: justify;
+        font-size: 1.2vw; }
+  main aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    width: 23%;
+    margin-top: 2%;
+    color: #001a1a;
+    margin-left: 2%; }
+    main aside h3 {
+      font-family: "Share Tech", sans-serif;
+      font-weight: bold;
+      text-align: left;
+      font-size: 3vw; }
+    main aside article {
+      padding-left: 2%; }
+      main aside article h4 {
+        font-family: "Share Tech", sans-serif;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 0;
+        font-size: 1.5vw; }
+      main aside article img {
+        width: 100%; }
+    main aside button {
+      font-family: "Share Tech", sans-serif;
+      background-color: #f7ef64; }
+
+footer {
+  background-color: gray;
+  width: 100%;
+  font-family: "Share Tech", sans-serif; }
+
+@media (max-width: 400px) {
+  header {
+    height: 2%; } }
 
 /*# sourceMappingURL=styles.css.map */
