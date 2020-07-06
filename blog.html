@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="head">
+            <img src="https://via.placeholder.com/50" class="logo" />
+            <h1>Blog</h1>
+        </div>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>Blogs</li>
+                <li>Contacto</li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="articleContainer">
+            <article class="articuloIzquierdo">
+                <h2>Post 1</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita adipisci temporibus hic ducimus
+                    quisquam ipsam beatae placeat iusto aperiam, molestias ratione provident, necessitatibus nobis omnis
+                    amet pariatur explicabo officiis illo.</p>
+                <button class="btn">Ver más...</button>
+            </article>
+            <article class="articuloDerecho">
+                <h2>Post 2</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia eaque ullam debitis velit minima vero
+                    doloremque voluptates, recusandae, omnis unde aut dignissimos? Dolorem ullam corporis molestiae
+                    laudantium dicta! Quidem, suscipit?</p>
+                <button class="btn">Ver más...</button>
+            </article>
+        </section>
+        <section class="form">
+            <h2 class="title" >Contacto</h2>
+            <form action="">
+                <div>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" name="nombre" placeholder="Juan Carlos" id="nombre" required>
+                </div>
+                <div>
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" name="apellido" placeholder="Rodriguez" id="apellido" required>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" placeholder="juancarodriguez@gmail.com" id="email" required>
+                </div>
+                <div>
+                    <label for="edad">Edad:</label>
+                    <input type="number" name="edad" placeholder="22" id="edad" min="1">
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <footer>COPYRIGHT 2020</footer>
+
+</body>
+
+</html>
